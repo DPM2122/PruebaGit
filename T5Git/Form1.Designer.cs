@@ -33,9 +33,10 @@ namespace T5Git
             this.label1 = new System.Windows.Forms.Label();
             this.aluNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -73,13 +74,6 @@ namespace T5Git
             this.label2.TabIndex = 3;
             this.label2.Text = "Nota";
             // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(487, 80);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(77, 20);
-            this.aluNota.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -98,20 +92,28 @@ namespace T5Git
             this.listaAlumnos.Size = new System.Drawing.Size(674, 143);
             this.listaAlumnos.TabIndex = 6;
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(477, 80);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(67, 20);
+            this.aluNota.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.aluNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "GITDMP2122";
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,9 +125,9 @@ namespace T5Git
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox aluNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox listaAlumnos;
+        private System.Windows.Forms.NumericUpDown aluNota;
     }
 }
 
