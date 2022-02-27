@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GITDMP2122
+namespace T5Git
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace GITDMP2122
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WindowsFormsApp1.Form1());
+            Application.Run(new Form1());
         }
     }
 }
